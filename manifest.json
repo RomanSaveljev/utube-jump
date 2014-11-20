@@ -17,5 +17,10 @@
 	},
 	"background": {
 		"scripts": ["jquery-1.11.1.min.js", "URI.js", "background.js"]
-	}
+	},
+	"content_scripts": [{
+		"js": ["injector.js"],
+		"matches": ["https://www.youtube.com/*"]
+	}],
+	"web_accessible_resources": ["shortcut.js", "injection.js"]
 }
